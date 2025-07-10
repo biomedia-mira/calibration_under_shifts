@@ -1,0 +1,9 @@
+defaults:
+  - base.yaml
+  - _self_
+
+encoder_name: "timm"
+pretrained: True
+predefined_preprocessing: True
+freeze_encoder: True
+checkpoint_name: "hf-hub:timm/vit_base_patch14_dinov2.lvd142m"

@@ -1,0 +1,15 @@
+defaults:
+  - base.yaml
+  - _self_
+_target_: data_handling.xray.CheXpertDataModule
+dataset: chexpert
+batch_size: 24
+num_workers: 12
+augmentations:
+  resize: [224, 224]
+  horizontal_flip: True
+  random_rotation: 10
+  randrom_crop: [0.9, 1.1]
+  random_color_jitter: 0.2
+label: 'No Finding'
+cache: True

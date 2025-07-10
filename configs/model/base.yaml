@@ -1,0 +1,5 @@
+encoder_name: "resnet50"
+pretrained: False
+predefined_preprocessing: False
+freeze_encoder: False
+checkpoint_name: None

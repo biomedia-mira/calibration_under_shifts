@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /trainer: base
+  - override /data: chexpert
+
+trainer:
+  lr: 1e-4
+  val_check_interval: 2500
+  metric_to_monitor: 'Val/BalAccuracy'
+  num_epochs: 50

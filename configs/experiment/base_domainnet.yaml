@@ -1,0 +1,4 @@
+# @package _global_
+defaults:
+  - override /trainer: base
+  - override /data: domainnet

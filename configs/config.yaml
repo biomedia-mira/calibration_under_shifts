@@ -1,0 +1,11 @@
+defaults:
+  - _self_
+  - data: base_camelyon
+  - trainer: base
+  - model: base
+  - experiment: base
+
+project_name: calibration
+seed: 11
+mixed_precision: False
+is_unit_test_config: False

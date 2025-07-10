@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - override /trainer: base
+  - override /data: icam
+
+trainer:
+  metric_to_monitor: 'Val/BalAccuracy'
+  num_epochs: 100
+  lr: 1e-4

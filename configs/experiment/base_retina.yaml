@@ -1,0 +1,7 @@
+# @package _global_
+defaults:
+  - override /trainer: base
+  - override /data: retina
+
+trainer:
+  metric_to_monitor: 'Val/BalAccuracy'

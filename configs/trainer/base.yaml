@@ -1,0 +1,17 @@
+name: base
+lr: 1e-3
+num_epochs: 150
+scheduler: 'cosine'
+patience_for_scheduler: 15
+patience_for_early_stop: 80
+metric_to_monitor: "Val/Accuracy"
+metric_to_monitor_mode: "max"
+val_check_interval: None
+weight_decay: 0.0
+use_train_augmentations: True
+loss: "ce"
+device: [0]
+label_smoothing: 0.
+entropy_regularisation: 0.
+use_focal_loss: False
+focal_loss_gamma: -53  this is just a shorthand notation for the process in mukhoti et al. not actually using a negative gamma

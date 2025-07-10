@@ -1,0 +1,19 @@
+defaults:
+  - base.yaml
+  - _self_
+_target_: data_handling.mammo.EmbedDataModule
+dataset: embed
+
+batch_size: 32
+num_workers: 12
+augmentations:
+  resize: [256, 192]
+  horizontal_flip: True
+  center_crop: [224, 224]
+  random_crop: [.8, 1.]
+  random_color_jitter: .2
+  random_rotation: 10
+input_channels: 3
+
+label: tissueden
+cache: True

@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+  - override /trainer: base
+  - override /data: entity30
+
+model:
+  pretrained: False
+
+trainer:
+  metric_to_monitor: 'Val/BalAccuracy'
+  num_epochs: 50

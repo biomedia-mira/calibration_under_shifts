@@ -1,0 +1,16 @@
+defaults:
+  - base.yaml
+  - _self_
+_target_: data_handling.retina.NewRetinaDataModule
+dataset: retina
+num_workers: 12
+input_channels: 3
+cache: True
+batch_size: 32
+augmentations:
+  resize: 224
+  center_crop: [224, 224]
+  horizontal_flip: True
+  random_rotation: 10
+  randrom_crop: [0.8, 1.1]
+  random_color_jitter: 0.1

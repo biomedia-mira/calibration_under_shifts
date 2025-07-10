@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /trainer: base
+  - override /data: embed
+
+trainer:
+  lr: 1e-4
+  val_check_interval: 1000
+  metric_to_monitor: 'Val/BalAccuracy'
+  num_epochs: 50

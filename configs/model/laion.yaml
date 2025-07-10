@@ -1,0 +1,9 @@
+defaults:
+  - base.yaml
+  - _self_
+
+encoder_name: "openclip"
+pretrained: True
+predefined_preprocessing: True
+freeze_encoder: True
+checkpoint_name: "hf-hub:laion/CLIP-ViT-B-16-laion2B-s34B-b88K"
