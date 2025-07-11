@@ -1,6 +1,6 @@
 # Where are we with calibration under dataset shift in image classification?
 
-This repository contains the code associated with the paper: 'Where are we with calibration under dataset shift in image classification?'.
+This repository contains the code associated with the paper: 'Where are we with calibration under dataset shift in image classification?' [link](https://arxiv.org/abs/2507.07780)
 
 ![alt text](figure1.png)
 
